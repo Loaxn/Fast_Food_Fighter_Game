@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #59b39c;
+  /* overflow-y: hidden; */
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+/* POP UP */
+
+.Main_background{
+        background-position: center; /* Center the background image */
+        height: 100vh; /* Set the height of the container */
+        width: 100%; /* Set the width of the container */
+  background-image: url("img/cityy.jpg");
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Chrome, Safari, Opera */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0bffca; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0bffca; 
+}
+
+.text_meet {
+  color: white;
+  text-align: center;
+  font-size: 1rem; 
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 600px;
+  animation: slideInFromLeft 1s ease-in-out; 
+
+}
+
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+
+
+@keyframes moveButton {
+  0% {
+      transform: translate(0);
+  }
+  50% {
+      transform: translate(25px, 0); /* Move the button to the right */
+  }
+  100% {
+      transform: translate(0);
+  }
+}
+
+.mon-bouton {
+  background-color: #59b39c; 
+  border: none; 
+  color: white; 
+  position: absolute;
+  top: 65%;
+  left: 45%;
+  padding: 15px 55px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 1.5rem; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 10px;
+  animation: moveButton 5s infinite; /* Apply the animation */
+}
+
+
+
+.mon-bouton:hover{
+  background-color: #d6d6d6; 
+  border: solid #cdd6d4;
+  border-radius: 30px;
+  color: #59b39c;
+  margin-right: 0;
+}
+
+.perso-selected{
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+
+.character{
+  height: 500px;
+  width: 400px;
+  overflow-y: scroll;
+  border: double;
+  background-color: rgb(105, 175, 175);
+  margin-right: 50px;
+
+}
+
+
+
+.character img {
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info p {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #d7dbda;
+}
+
+
+.index_text{
+  width: 700px;
+}
+
+.index_text {
+  text-align: center;
+  margin: auto;
+}
+
+.index_text h1{
+  font-size: 2.2rem;
+  color: #ff99c8;
+
+}
+.container{
+  display: flex;
+}
+
+.character_1{
+  display: flex;
+}
+
+.nav
+{
+  position: absolute;
+}
+
+#battle_form{
+  border: double;
+  margin-top: 15%;
+  height: fit-content;
+  padding: 10px;
+}
+
+.characters-container {
+  display: flex;
+  margin: 100px;
+}
+
+
+
+.character-info {
+  margin-right: 400px; 
+  display: flex;
+  align-items: center;
+}
+
+.info-text {
+  margin-left: 40px; 
+  width: 200px;
+}
+
+.info-text p {
+  font-size: 1rem;
+}
+
+
+/* BACKOFFICE */
+
+.character_2{
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins';
+  /* width: 500px; */
+}
+
+.character-name {
+  font-weight: bold;
+}
+
+
+
+.character-image {
+  margin-top: 10px;
+}
+
+.input-field {
+  margin: 5px 0;
+}
+
+.action-button {
+  margin-top: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
